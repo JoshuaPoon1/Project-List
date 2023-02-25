@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+    height: 300vh;
+    display:flex;
+    justify-content: center;
+}
+
+
+.projects_card{
+    position: absolute;
+    width: 28rem;
+    height: 35rem;
+    background: linear-gradient(to bottom left, rgb(66, 8, 66), black);
+    border-radius: 5%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.myProjects{
+    position:absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    top: 2rem;
+    right: 6.3rem;
+    font-size: 1.4rem;
+}
+
+.myProjects:nth-child(2){
+    position:absolute;
+    top: 2rem;
+    right: 6.3rem;
+    animation: glitch 1.2s infinite;
+    color:white;
+}
+
+  @keyframes glitch {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    10% {
+      transform: translate(0.2rem, 0.3rem);;
+      opacity: 0.25;
+    }
+    25% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(0.3rem, 0.2rem);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(0.2rem, 0.1rem);
+      opacity: 0.5;
+    }
+    70% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(0.2rem, 0.2rem);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+
+  .list{
+    color:white;
+    font-size: 2.2rem;
+    font-family: 'Press Start 2P', cursive;
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .boxed{
+    background-color: black;
+    border: 1px solid white;
+    padding: 1.4rem;
+    text-align: center;
+  }
